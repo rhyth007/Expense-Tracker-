@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string-array name="items">
+
+        <item>Select Item</item>
+        <item>Transport</item>
+        <item>Food</item>
+        <item>Entertainment</item>
+        <item>House</item>
+        <item>Health</item>
+        <item>Charity</item>
+        <item>Personal</item>
+        <item>Other</item>
+
+    </string-array>
+</resources>
