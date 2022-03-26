@@ -1,19 +1,21 @@
 package com.example.expensetracker;
 
 public class Data {
-    String item,data,id,notes;
-    int amount,month;
+    String item, date, id, notes;
+    int amount, month, week;
 
     public Data() {
+
     }
 
-    public Data(String item, String data, String id, String notes, int amount, int month) {
+    public Data(String item, String date, String id, String notes, int amount, int month, int week) {
         this.item = item;
-        this.data = data;
+        this.date = date;
         this.id = id;
         this.notes = notes;
         this.amount = amount;
         this.month = month;
+        this.week = week;
     }
 
     public String getItem() {
@@ -24,12 +26,12 @@ public class Data {
         this.item = item;
     }
 
-    public String getData() {
-        return data;
+    public String getDate() {
+        return date;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getId() {
@@ -62,5 +64,13 @@ public class Data {
 
     public void setMonth(int month) {
         this.month = month;
+    }
+
+    public int getWeek() {
+        return week;
+    }
+
+    public void setWeek(int week) {
+        this.week = week;
     }
 }

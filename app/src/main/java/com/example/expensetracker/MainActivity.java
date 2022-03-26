@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView BudgetcardView,TodayCardView;
+    private CardView BudgetcardView,TodayCardView,WeekCardView,MonthCardView;
 
 
 
@@ -21,13 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
         BudgetcardView = findViewById(R.id.BudgetCardView);
         TodayCardView = findViewById(R.id.TodayCardView);
+        WeekCardView = findViewById(R.id.WeekCardView);
+        MonthCardView = findViewById(R.id.MonthCardView);
         BudgetcardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent = new Intent(MainActivity.this,BudgetActivity.class);
                 startActivity(intent);
-                //finish();
+
             }
         });
        TodayCardView.setOnClickListener(new View.OnClickListener() {
@@ -38,5 +40,23 @@ public class MainActivity extends AppCompatActivity {
                startActivity(intent2);
            }
        });
+
+        WeekCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(MainActivity.this,WeekSpendingActivity.class);
+                intent3.putExtra("type","week");
+                startActivity(intent3);
+            }
+        });
+
+        MonthCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent4 = new Intent(MainActivity.this,WeekSpendingActivity.class);
+                intent4.putExtra("type","month");
+                startActivity(intent4);
+            }
+        });
     }
 }
