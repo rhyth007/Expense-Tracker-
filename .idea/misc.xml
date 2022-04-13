@@ -4,17 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/drawable/borders.xml" value="0.1" />
-        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_budget.xml" value="0.152" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/drawable/ic_person.xml" value="0.1" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_acount.xml" value="0.1" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_budget.xml" value="0.536" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_choose_analytic.xml" value="0.264" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_daily_anlaytics.xml" value="0.300463269358041" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_history.xml" value="0.25" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_monthly_analytics.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_registration.xml" value="0.2359375" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_splash_screen.xml" value="0.2359375" />
-        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_today_spending.xml" value="0.136" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_today_spending.xml" value="0.1" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_todays_spending.xml" value="0.1" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_week_spending.xml" value="0.2" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/activity_weekly_analytics.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/input_layout.xml" value="0.264" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/retrieve_layout.xml" value="0.264" />
         <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/layout/update_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Rhyth/Desktop/SEMVI/MCC/ExpenseTracker/app/src/main/res/menu/menu.xml" value="0.23645833333333333" />
       </map>
     </option>
   </component>

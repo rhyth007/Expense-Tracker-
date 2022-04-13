@@ -82,6 +82,7 @@ public class WeekSpendingActivity extends AppCompatActivity {
     }
 
     private void getMonthly() {
+        getSupportActionBar().setTitle("Monthly Expenditure");
         MutableDateTime epoch = new MutableDateTime();
         epoch.setDate(0);
         DateTime now = new DateTime();

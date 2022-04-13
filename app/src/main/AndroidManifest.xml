@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpenseTracker">
         <activity
+            android:name=".AcountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonthlyAnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyAnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyAnlayticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseAnalyticActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeekSpendingActivity"
             android:exported="false" />
         <activity

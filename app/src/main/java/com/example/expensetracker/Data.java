@@ -1,18 +1,21 @@
 package com.example.expensetracker;
 
 public class Data {
-    String item, date, id, notes;
+    String item, date, id, notes,itemday,itemweek,itemmonth;
     int amount, month, week;
 
-    public Data() {
 
-    }
+    public  Data(){}
 
-    public Data(String item, String date, String id, String notes, int amount, int month, int week) {
+
+    public Data(String item, String date, String id, String notes, String itemday, String itemweek, String itemmonth, int amount, int month, int week) {
         this.item = item;
         this.date = date;
         this.id = id;
         this.notes = notes;
+        this.itemday = itemday;
+        this.itemweek = itemweek;
+        this.itemmonth = itemmonth;
         this.amount = amount;
         this.month = month;
         this.week = week;
@@ -50,6 +53,30 @@ public class Data {
         this.notes = notes;
     }
 
+    public String getItemday() {
+        return itemday;
+    }
+
+    public void setItemdat(String itemday) {
+        this.itemday = itemday;
+    }
+
+    public String getItemweek() {
+        return itemweek;
+    }
+
+    public void setItemweek(String itemweek) {
+        this.itemweek = itemweek;
+    }
+
+    public String getItemmonth() {
+        return itemmonth;
+    }
+
+    public void setItemmonth(String itemmonth) {
+        this.itemmonth = itemmonth;
+    }
+
     public int getAmount() {
         return amount;
     }
@@ -73,4 +100,7 @@ public class Data {
     public void setWeek(int week) {
         this.week = week;
     }
+
+
+
 }

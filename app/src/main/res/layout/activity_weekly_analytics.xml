@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#38023B"
+    android:layout_height="match_parent"
+    tools:context=".WeeklyAnalyticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totalAmountSpentOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount:$0"
+            android:textSize="20sp"
+            android:background="#38023B"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#A288E3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/green" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="L 50%"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="#A288E3"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/brown"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="50%-99%"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="#A288E3"/>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/red"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="G 100%"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="#A288E3"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutTransport">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transport"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsTransportAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:layout_weight="2"
+                                android:textColor="#A288E3"
+                                android:id="@+id/progress_ratio_transport"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/transport_status"
+                                android:layout_height="18dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/status_image__Transport"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/linearLayout"
+                        android:src="@drawable/ic_transport">
+
+                    </ImageView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutFood">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Food"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsFoodAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:id="@+id/progress_ratio_food"
+                                android:layout_weight="2"
+                                android:textColor="#A288E3"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/food_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/status_image__Food"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/linearLayout2"
+                        android:src="@drawable/ic_food">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutEntertainment">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Entertainment"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsEntertainmentAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:layout_weight="3"
+                                android:textColor="#A288E3"
+                                android:id="@+id/progress_ratio_entertainment"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/Entertainment_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/linearLayout3"
+                        android:id="@+id/status_image__Entertainment"
+                        android:src="@drawable/ic_entertainment">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutHouse">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="House"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsHouseAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:layout_weight="3"
+                                android:textColor="#A288E3"
+                                android:id="@+id/progress_ratio_house"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/House_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/status_image__House"
+
+                        android:layout_toEndOf="@+id/linearLayout4"
+                        android:src="@drawable/ic_house">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutHealth">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Health"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsHealthAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:id="@+id/progress_ratio_health"
+                                android:layout_weight="3"
+                                android:textColor="#A288E3"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/Health_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/linearLayout5"
+                        android:id="@+id/status_image__Health"
+                        android:src="@drawable/ic_health">
+
+                    </ImageView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutCharity">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Charity"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsCharityAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:layout_weight="3"
+                                android:textColor="#A288E3"
+                                android:id="@+id/progress_ratio_charity"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/Charity_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/status_image__Charity"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/linearLayout6"
+                        android:src="@drawable/ic_consultancy">
+
+                    </ImageView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutPersonal">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Personal"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsPersonalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:layout_weight="3"
+                                android:id="@+id/progress_ratio_personal"
+                                android:textColor="#A288E3"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/Personal_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/status_image__Personal"
+                        android:layout_toEndOf="@+id/linearLayout7"
+                        android:src="@drawable/ic_personalcare">
+
+                    </ImageView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/relativeLayoutOther">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout8"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Other"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/analyticsOtherAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="status"
+                                android:layout_weight="3"
+                                android:id="@+id/progress_ratio_other"
+                                android:textColor="#A288E3"
+                                android:textStyle="bold"
+                                android:textSize="11sp">
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:id="@+id/Other_status"
+                                android:layout_height="18dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="This Week"
+                            android:textColor="#A288E3"
+                            android:textSize="12sp">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:id="@+id/status_image__Other"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/linearLayout8"
+                        android:src="@drawable/ic_other">
+
+                    </ImageView>
+                </RelativeLayout>
+
+
+                <com.anychart.AnyChartView
+                    android:id="@+id/anyChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/linearLayoutAnalysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout9"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Summary Spending Status"
+                            android:textColor="#A288E3"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Spent :Cash 0 "
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#A288E3"
+                            android:id="@+id/monthSpentAmount"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="status"
+                                android:textSize="11sp"
+                                android:textColor="#A288E3"
+                                android:id="@+id/monthRatioSpending"/>
+                            <ImageView
+                                android:id="@+id/monthRatioSpending_img"
+                                android:layout_width="0dp"
+                                android:layout_height="18dp"
+                                android:layout_weight="1"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

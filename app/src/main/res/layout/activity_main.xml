@@ -54,7 +54,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/borders"
                 android:gravity="center"
@@ -99,7 +99,7 @@
                 android:background="@drawable/borders"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="$0"
+                android:text="\u20B90"
                 android:textColor="#A288E3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -112,7 +112,7 @@
                 android:background="@drawable/borders"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="$0"
+                android:text="\u20B90"
                 android:textColor="#A288E3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -125,7 +125,7 @@
                 android:background="@drawable/borders"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="$0"
+                android:text="\u20B90"
                 android:textColor="#A288E3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -138,7 +138,7 @@
                 android:background="@drawable/borders"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="$0"
+                android:text="\u20B90"
                 android:textColor="#A288E3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -151,7 +151,7 @@
                 android:background="@drawable/borders"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="$0"
+                android:text="\u20B90"
                 android:textColor="#A288E3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -202,6 +202,15 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Up Your"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
@@ -210,7 +219,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="My Budget"
+                        android:text="Budget"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textStyle="bold">
@@ -239,6 +248,14 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Today's"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
@@ -247,7 +264,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Today"
+                        android:text="Spending"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textStyle="bold">
